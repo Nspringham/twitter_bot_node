@@ -1,0 +1,19 @@
+{
+  "name": "practie_npm",
+  "version": "1.0.0",
+  "description": "first init ",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "random",
+    "keywords"
+  ],
+  "author": "nick springham",
+  "license": "ISC",
+  "dependencies": {
+    "twit": "^2.2.9"
+  }
+}
