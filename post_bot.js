@@ -6,13 +6,12 @@ var T = new Twit(config);
 
 // ***POST METHOD***
 
-tweetIt();
-setInterval(tweetIt, 1000*20)
+// setInterval(tweetIt, 1000*20) //repear function every 20 seconds.
 function tweetIt() {
   //floor function so it doesnt have a decimal
   var r = Math.floor(Math.random()*100);
   var tweet = {
-    status: 'here is a random number ' + r + ', another tweet from node.js #testingbots'
+    status: 'here is a random number ' + r + ', another tweet from node.js'
   }
 
   T.post('statuses/update', tweet, tweeted);
@@ -24,5 +23,7 @@ function tweetIt() {
         console.log("it worked")
     };
   };
+  console.log("Shutting down.");
 }
-// a
+//after module.exports._____ the name of the function above is used (tweetIt)
+module.exports.tweetIt = tweetIt;
